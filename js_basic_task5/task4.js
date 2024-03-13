@@ -5,7 +5,7 @@
 // 70-89 - Good performance
 // 90-100 - Very good perfomance
 
-const average = (math, literature, physics) => {
+const averageSum = (math, literature, physics) => {
     let averageMark = (math + literature + physics) / 3
     if (averageMark >= 1 &&  averageMark <= 49) {
         return "1-49 - Low performance"
@@ -16,4 +16,4 @@ const average = (math, literature, physics) => {
     } else (averageMark >= 90 &&  averageMark <= 100)
         return "90-100 - Very good performance"
 }
-console.log(average(77,45,79))
+console.log(averageSum(77,45,79))
