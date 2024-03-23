@@ -7,7 +7,7 @@
 
 function calculate(num1, num2, operator) {
 
-    if (operator === '/' && num2 === 0) {
+    if (operator === '/' || num2 === 0) {
         throw new Error('Якщо операція ділення("/"), то другий параметр не може бути 0');
     }
 
@@ -23,7 +23,6 @@ function calculate(num1, num2, operator) {
         throw new Error('Кількість аргументів не повинна бути більше 3-х');
     }
 
-    let result;
     if (operator === '+') {
         return num1 + num2
 
