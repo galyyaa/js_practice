@@ -1,0 +1,22 @@
+CSS selectors
+
+1. .mw-page-title-main
+2. div.plainlist a[href^="/wiki/One_Montgomery_Tower"], div.plainlist a[href^="/wiki/San_Francisco"],div.plainlist a[href^="/wiki/California"]
+3. img[srcset]
+
+XPath selectors
+
+1. //h1
+   //h1[@id='firstHeading'];
+   //h1[@class='mv-first-heading']; 
+   
+2. //div[@class='plainlist']//a[@href='/wiki/One_Montgomery_Tower' or @href='/wiki/San_Francisco' or @href='/wiki/California']
+
+ще так спочатку робила, але це пошук по факту окремого рядку
+(//div[@class='plainlist']//li)//a[@href='/wiki/One_Montgomery_Tower']
+(//div[@class='plainlist']//li)//a[@href='/wiki/San_Francisco']
+(//div[@class='plainlist']//li)//a[@href='/wiki/California']
+
+3. //img[@srcset]
+
+
